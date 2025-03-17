@@ -1,9 +1,10 @@
 version: '3.8'
 services:
-  backend:
-    image: geresvb/backend:1.0
-    container_name: Backend
+
+  frontend:
+    image: geresvb/frontend:1.0
+    container_name: Frontend
     env_file:
       - .env
     ports:
-      - "3001:3001"
+      - "3000:3000"
